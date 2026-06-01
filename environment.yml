@@ -1,0 +1,19 @@
+name: autoffs
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.13
+  - pip
+  - pip:
+    - PyYAML==6.0.3
+    - matplotlib==3.10.7
+    - nibabel==5.3.2
+    - pandas==2.3.3
+    - pyvista==0.46.4
+    - scikit-learn==1.7.2
+    - seaborn==0.13.2
+    - tensorboard==2.20.0
+    - torch==2.8.0
+    - torchio==0.20.23
+    - torchvision==0.23.0
+    - tqdm==4.67.1

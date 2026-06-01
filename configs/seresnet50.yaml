@@ -1,0 +1,38 @@
+{
+  # Dataset config
+  'data_dir': /path/to/data/,
+  'metadata_csv': /path/to/metadata.csv,
+
+  # Model config
+  'model': seresnet50,
+  'in_channel': 1,
+  'num_classes': 1,
+  'p_dropout': 0.3,
+
+  # Optimizer & Schedule
+  'scheduler': plateau,
+  'lr': 0.0001,
+
+  # Criterion
+  'criterion': bce_weighted,
+
+  # Hyperparameter
+  'batch_size': 2,
+  'effective_batch_size': 16,
+  'num_workers': 32,
+
+  # Masking
+  'masking': random_patch,
+  'mask_ratio': 0.5,
+  'mask_prob': 0.75,
+  'patch_size': [64, 32, 64],
+
+  # Training
+  'num_epochs': 100,
+  'early_stopping_patience': 25,
+  'save_best': accuracy,
+
+  # Logging
+  'log_tensorboard': True,
+  'log_interval': 1,
+}
